@@ -1,0 +1,36 @@
+#include <iostream>
+ #include <cstdlib>
+ using namespacestd;
+ // Global variable int
+ b =60;
+ // Namespacedeclarations
+ namespace N1
+ {
+ }
+ int a = 40;
+ namespace N2
+ {
+ }
+ int a = 2;
+ // Function to demonstrate local, global, and namespace scope
+ void fun()
+ {
+ int a = 2; // Local variable inside fun
+  cout << "FunA: " << a << " " << ::b << endl; // local a, global b
+ }
+ int main()
+ {
+ system(“color F0”);
+ // Display Roll Number in output
+ cout << "Roll No: 24B11AI411" << endl;
+ {
+ int a = 2; // Inner block variable cout
+ << "InnerA: " << a << endl;
+ }
+ cout << "Outer B : " << b << endl;
+ fun(); // Call to function fun()
+ // Using fully qualified names
+ cout << "Name space 1 : " << N1::a << endl;
+ cout << "Name space 2 : " << N2::a << endl;
+ return 0
+ }
